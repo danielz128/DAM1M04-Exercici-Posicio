@@ -67,3 +67,42 @@ footer {
 
     }
 }
+#productes-list {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.producte {
+    width: 25vw;
+    height: 30vh;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    div {
+        margin-bottom: 0;
+        display: grid;
+        grid-template-columns: auto auto;
+        .producte-name {
+            grid-column: 1 / span 2;
+        }
+        backdrop-filter: blur(5px) saturate(200%);
+        background-color: rgba(255, 255, 255, 0.5);
+        box-sizing: border-box;
+        padding: 16px;
+    }
+}
+#cerdo {
+    background: center / cover url("assets/productes/cerdoenpanado.jpeg");
+}
+#ternera {
+    background: center / cover url("assets/productes/ternera.webp");
+}
+#pavo {
+    background: center / cover url("assets/productes/pavo.jpeg");
+}
+#pollo {
+    background: center / cover url("assets/productes/roasterchicken.webp");
+}
