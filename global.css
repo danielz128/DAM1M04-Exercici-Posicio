@@ -38,3 +38,32 @@ footer {
     background-color: green;
     border-radius: 15px;
 }
+#hero {
+    display: flex;
+    background-image: url("assets/hero.jpeg");
+    background-size: cover;
+    flex-flow: column;
+    align-items: center;
+    h1, h3 {
+        color: white;
+    }
+    padding-bottom: 1em;
+}
+
+#cards-container {
+    display: flex;
+    justify-content: space-around;
+    div {
+        background-color: grey;
+        border-radius: 1em;
+        padding: 0.5em;
+        max-width: 8em;
+        margin: 5px;
+    }
+}
+#benefits-container {
+    display: flex;
+    p {
+
+    }
+}
