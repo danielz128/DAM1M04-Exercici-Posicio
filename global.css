@@ -40,6 +40,7 @@ nav {
         font-weight: bolder;
         text-decoration: none;
     }
+    z-index: 99;
 }
 .box-styling {
     margin-top: 15px;
@@ -120,6 +121,7 @@ a {
         margin: 0;
     }
     width: 100%;
+    
 }
 .banner-blur {
     text-align: center;
@@ -148,6 +150,8 @@ a {
 #benefits-container {
     display: flex;
     justify-content: space-around;
+    gap: 2px;
+    flex-wrap: wrap;
     p {
         background-color: var(--palletteColor3);
         color: var(--palletteColor1);
@@ -200,11 +204,21 @@ a {
     display: flex;
     justify-content: start;
     background-color: var(--palletteColor3);
+    flex-wrap: wrap;
     span {
         cursor: pointer;
         background-color: var(--palletteColor2);
         border: 2px solid var(--palletteColor3);
         padding: 0.5em;
+    }
+}
+@media (max-width: 768px) {
+    #contact-grid {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+    #cards-container > div {
+        width: 80%;
     }
 }
 #cerdo {
