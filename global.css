@@ -57,7 +57,7 @@ body {
     background-color: var(--palletteColorBody);
 }
 footer {
-    position: absolute;
+    position: relative;
     background-color: var(--palletteNavs);
     color: var(--palletteColor1);
     width: 100%;
