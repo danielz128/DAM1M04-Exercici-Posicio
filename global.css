@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&family=Special+Elite&display=swap');
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.pt-serif-caption-regular {
+  font-family: "PT Serif Caption", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 :root {
     --palletteColor1: #F29544;
     --palletteColor2: #D94814;
@@ -5,6 +17,9 @@
     --palletteOverNavs: #400601;
     --palletteNavs: #0D0D0D;
     --palletteColorBody: #ebb485;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 nav {
     position: fixed;
@@ -14,6 +29,7 @@ nav {
     display: flex;
     justify-content: end;
     a {
+        font-family: "PT Serif Caption", serif;
         padding-bottom: 0.5em;
         padding-top: 0.5em;
         padding-left: 1em;
@@ -46,7 +62,9 @@ footer {
     color: var(--palletteColor1);
     width: 100%;
     bottom: 0%;
-    
+    p {
+        font-weight: bolder;
+    }
 }
 a {
     color: var(--palletteColor2)
