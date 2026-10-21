@@ -56,6 +56,12 @@ body {
     margin: 0;
     margin-top: 2em;
     background-color: var(--palletteColorBody);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+main {
+    flex-grow: 1;
 }
 footer {
     position: relative;
@@ -165,6 +171,7 @@ a {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 2px;
 }
 .producte {
     margin-top: 8px;
